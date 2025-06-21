@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d21" for="edge" attr.name="isBlocked" attr.type="boolean"/>
+<key id="d20" for="edge" attr.name="eta" attr.type="string"/>
+<key id="d19" for="edge" attr.name="assignedAt" attr.type="string"/>
+<key id="d18" for="edge" attr.name="requestedAt" attr.type="string"/>
+<key id="d17" for="edge" attr.name="requestedAt" attr.type="double"/>
+<key id="d16" for="edge" attr.name="distance" attr.type="double"/>
+<key id="d15" for="edge" attr.name="isBlocked" attr.type="double"/>
+<key id="d14" for="edge" attr.name="eta" attr.type="double"/>
+<key id="d13" for="edge" attr.name="assignedAt" attr.type="double"/>
+<key id="d12" for="edge" attr.name="type" attr.type="string"/>
+<key id="d11" for="edge" attr.name="toId" attr.type="string"/>
+<key id="d10" for="edge" attr.name="fromId" attr.type="string"/>
+<key id="d9" for="node" attr.name="entityID" attr.type="string"/>
+<key id="d8" for="node" attr.name="kind" attr.type="string"/>
+<key id="d7" for="node" attr.name="taskID" attr.type="string"/>
+<key id="d6" for="node" attr.name="priority" attr.type="string"/>
+<key id="d5" for="node" attr.name="patientID" attr.type="string"/>
+<key id="d4" for="node" attr.name="trustTimestamp" attr.type="string"/>
+<key id="d3" for="node" attr.name="trust" attr.type="double"/>
+<key id="d2" for="node" attr.name="type" attr.type="string"/>
+<key id="d1" for="node" attr.name="agentId" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="R">
+  <data key="d0">Agent</data>
+  <data key="d1">R</data>
+  <data key="d2">robot</data>
+  <data key="d3">0.87</data>
+  <data key="d4">2025-06-20T16:00:00</data>
+</node>
+<node id="S">
+  <data key="d0">Agent</data>
+  <data key="d1">S</data>
+  <data key="d2">staff</data>
+  <data key="d3">0.75</data>
+  <data key="d4">2025-06-20T16:01:00</data>
+</node>
+<node id="D">
+  <data key="d0">Agent</data>
+  <data key="d1">D</data>
+  <data key="d2">drone</data>
+  <data key="d3">0.92</data>
+  <data key="d4">2025-06-20T16:02:00</data>
+</node>
+<node id="P1">
+  <data key="d0">Patient</data>
+  <data key="d5">P1</data>
+  <data key="d6">high</data>
+</node>
+<node id="P2">
+  <data key="d0">Patient</data>
+  <data key="d5">P2</data>
+  <data key="d6">medium</data>
+</node>
+<node id="P3">
+  <data key="d0">Patient</data>
+  <data key="d5">P3</data>
+  <data key="d6">low</data>
+</node>
+<node id="P4">
+  <data key="d0">Patient</data>
+  <data key="d5">P4</data>
+  <data key="d6">high</data>
+</node>
+<node id="T1">
+  <data key="d0">Task</data>
+  <data key="d7">T1</data>
+  <data key="d8">triage</data>
+</node>
+<node id="T2">
+  <data key="d0">Task</data>
+  <data key="d7">T2</data>
+  <data key="d8">supply_delivery</data>
+</node>
+<node id="T3">
+  <data key="d0">Task</data>
+  <data key="d7">T3</data>
+  <data key="d8">patient_extraction</data>
+</node>
+<node id="A1">
+  <data key="d0">Environment</data>
+  <data key="d9">A1</data>
+  <data key="d2">room</data>
+</node>
+<node id="A2">
+  <data key="d0">Environment</data>
+  <data key="d9">A2</data>
+  <data key="d2">room</data>
+</node>
+<node id="Lobby">
+  <data key="d0">Environment</data>
+  <data key="d9">Lobby</data>
+  <data key="d2">room</data>
+</node>
+<node id="A3">
+  <data key="d0">Environment</data>
+  <data key="d9">A3</data>
+  <data key="d2">room</data>
+</node>
+<node id="A4">
+  <data key="d0">Environment</data>
+  <data key="d9">A4</data>
+  <data key="d2">room</data>
+</node>
+<node id="H_L">
+  <data key="d0">Environment</data>
+  <data key="d9">H_L</data>
+  <data key="d2">blocked_hallway</data>
+</node>
+<node id="H_R">
+  <data key="d0">Environment</data>
+  <data key="d9">H_R</data>
+  <data key="d2">blocked_hallway</data>
+</node>
+<node id="Z1">
+  <data key="d0">Environment</data>
+  <data key="d9">Z1</data>
+  <data key="d2">hazardous_zone</data>
+</node>
+<node id="Z2">
+  <data key="d0">Environment</data>
+  <data key="d9">Z2</data>
+  <data key="d2">hazardous_zone</data>
+</node>
+<node id="Exit">
+  <data key="d0">Environment</data>
+  <data key="d9">Exit</data>
+  <data key="d2">safe_zone</data>
+</node>
+<edge source="R" target="A1">
+  <data key="d10">R</data>
+  <data key="d11">A1</data>
+  <data key="d12">LOCATED_IN</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="S" target="Lobby">
+  <data key="d10">S</data>
+  <data key="d11">Lobby</data>
+  <data key="d12">LOCATED_IN</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="D" target="Lobby">
+  <data key="d10">D</data>
+  <data key="d11">Lobby</data>
+  <data key="d12">LOCATED_IN</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="P1" target="A1">
+  <data key="d10">P1</data>
+  <data key="d11">A1</data>
+  <data key="d12">LOCATED_IN</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="P1" target="T1">
+  <data key="d10">P1</data>
+  <data key="d11">T1</data>
+  <data key="d12">NEEDS_HELP</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d18">2025-06-20T15:58:00</data>
+</edge>
+<edge source="P2" target="A2">
+  <data key="d10">P2</data>
+  <data key="d11">A2</data>
+  <data key="d12">LOCATED_IN</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="P2" target="T1">
+  <data key="d10">P2</data>
+  <data key="d11">T1</data>
+  <data key="d12">NEEDS_HELP</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d18">2025-06-20T15:59:00</data>
+</edge>
+<edge source="P3" target="A3">
+  <data key="d10">P3</data>
+  <data key="d11">A3</data>
+  <data key="d12">LOCATED_IN</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="P3" target="T1">
+  <data key="d10">P3</data>
+  <data key="d11">T1</data>
+  <data key="d12">NEEDS_HELP</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d18">2025-06-20T16:02:00</data>
+</edge>
+<edge source="P4" target="A4">
+  <data key="d10">P4</data>
+  <data key="d11">A4</data>
+  <data key="d12">LOCATED_IN</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="P4" target="T1">
+  <data key="d10">P4</data>
+  <data key="d11">T1</data>
+  <data key="d12">NEEDS_HELP</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d18">2025-06-20T16:04:00</data>
+</edge>
+<edge source="T1" target="R">
+  <data key="d10">T1</data>
+  <data key="d11">R</data>
+  <data key="d12">ASSIGNED_TO</data>
+  <data key="d19">2025-06-20T16:05:00</data>
+  <data key="d20">5m</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="T2" target="D">
+  <data key="d10">T2</data>
+  <data key="d11">D</data>
+  <data key="d12">ASSIGNED_TO</data>
+  <data key="d19">2025-06-20T16:06:00</data>
+  <data key="d20">3m</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="T3" target="S">
+  <data key="d10">T3</data>
+  <data key="d11">S</data>
+  <data key="d12">ASSIGNED_TO</data>
+  <data key="d19">2025-06-20T16:07:00</data>
+  <data key="d20">7m</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="A1" target="H_L">
+  <data key="d10">A1</data>
+  <data key="d11">H_L</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">False</data>
+  <data key="d16">7.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="A2" target="H_L">
+  <data key="d10">A2</data>
+  <data key="d11">H_L</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">False</data>
+  <data key="d16">5.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="Lobby" target="H_L">
+  <data key="d10">Lobby</data>
+  <data key="d11">H_L</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">True</data>
+  <data key="d16">5.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="Lobby" target="H_R">
+  <data key="d10">Lobby</data>
+  <data key="d11">H_R</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">True</data>
+  <data key="d16">5.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="Lobby" target="Exit">
+  <data key="d10">Lobby</data>
+  <data key="d11">Exit</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">False</data>
+  <data key="d16">10.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="A3" target="H_R">
+  <data key="d10">A3</data>
+  <data key="d11">H_R</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">False</data>
+  <data key="d16">5.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="A4" target="H_R">
+  <data key="d10">A4</data>
+  <data key="d11">H_R</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">False</data>
+  <data key="d16">7.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="H_L" target="A1">
+  <data key="d10">H_L</data>
+  <data key="d11">A1</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">False</data>
+  <data key="d16">7.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="H_L" target="A2">
+  <data key="d10">H_L</data>
+  <data key="d11">A2</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">False</data>
+  <data key="d16">5.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="H_L" target="Lobby">
+  <data key="d10">H_L</data>
+  <data key="d11">Lobby</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">True</data>
+  <data key="d16">5.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="H_R" target="A3">
+  <data key="d10">H_R</data>
+  <data key="d11">A3</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">False</data>
+  <data key="d16">5.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="H_R" target="A4">
+  <data key="d10">H_R</data>
+  <data key="d11">A4</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">False</data>
+  <data key="d16">7.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="H_R" target="Lobby">
+  <data key="d10">H_R</data>
+  <data key="d11">Lobby</data>
+  <data key="d12">CONNECTED_TO</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d21">True</data>
+  <data key="d16">5.0</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="Z1" target="H_L">
+  <data key="d10">Z1</data>
+  <data key="d11">H_L</data>
+  <data key="d12">BLOCKED_BY</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+<edge source="Z2" target="H_R">
+  <data key="d10">Z2</data>
+  <data key="d11">H_R</data>
+  <data key="d12">BLOCKED_BY</data>
+  <data key="d13">nan</data>
+  <data key="d14">nan</data>
+  <data key="d15">nan</data>
+  <data key="d16">nan</data>
+  <data key="d17">nan</data>
+</edge>
+</graph></graphml>
