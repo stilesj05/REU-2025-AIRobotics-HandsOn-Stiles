@@ -3,7 +3,7 @@
 
 ## 📌 Problem Modeled
 
-We modeled a **graph partitioning problem** using the Max-Cut formulation on a real hospital simulation graph. This problem seeks to divide the nodes into two groups such that the number of edges **cut between them is maximized**.
+I modeled a **graph partitioning problem** using the Max-Cut formulation on a real hospital simulation graph. This problem seeks to divide the nodes into two groups such that the number of edges **cut between them is maximized**.
 
 This simulates:
 - Load balancing agents across hospital zones
@@ -14,7 +14,7 @@ This simulates:
 
 ## 🔁 QUBO Formulation
 
-We used `max_cut_qubo(G)` to construct a **QUBO dictionary** representing the problem in the form:
+I used `max_cut_qubo(G)` to construct a **QUBO dictionary** representing the problem in the form:
 
 \[
 \min \sum_{i,j} Q_{ij} x_i x_j
@@ -26,7 +26,7 @@ Where each variable \( x_i \in \{0, 1\} \) indicates group membership.
 
 ## ⚙️ Solution Method
 
-We solved the QUBO using:
+I solved the QUBO using:
 
 ```python
 maximum_cut(G, sampler=ExactSolver())
