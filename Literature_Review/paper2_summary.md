@@ -1,5 +1,7 @@
 ### Quantum-Enhanced Digital Twin Framework for Secure IoT in Healthcare  
-**Authors:** Ahmed K. Jameil1, Hamed Al‑Raweshidy
+
+**Authors:** Ahmed K. Jameil, Hamed Al‑Raweshidy
+
 **Publication Year:** 2025  
 
 **Summary:**  
