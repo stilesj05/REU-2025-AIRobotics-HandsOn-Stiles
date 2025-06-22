@@ -1,6 +1,6 @@
 ### Quantum-Enhanced Digital Twin Framework for Secure IoT in Healthcare  
 **Authors:** Mohammed Elhoseny, K. Shankar, Abdullah Alghamdi, Neeraj Kumar  
-**Publication Year:** 2020  
+**Publication Year:** 2025  
 
 **Summary:**  
 This paper proposes a secure, quantum-enhanced architecture for digital twin systems used in healthcare IoT (Internet of Things) environments. The authors integrate Quantum Key Distribution (QKD) and Quantum Random Number Generators (QRNG) into the digital twin communication pipeline to enhance confidentiality, authentication, and data integrity. The system architecture comprises three layers: the physical IoT layer (including patient-monitoring devices), the digital twin layer (which mirrors the real-time state of the physical system), and the quantum-enhanced security layer. The authors use simulations to demonstrate that their framework reduces security vulnerabilities in standard healthcare IoT systems, particularly during data exchange between patient sensors and central servers. They also employ lightweight blockchain technology to ensure traceability and integrity across the digital twin network.
