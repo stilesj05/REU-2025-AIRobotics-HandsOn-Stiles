@@ -1,10 +1,7 @@
 # REU-2025-AIRobotics-HandsOn-Stiles
 
-# Earthquake Hospital Rescue Simulation: Knowledge Graph & Quantum Optimization
-
 ## 📌 Project Overview
-This project simulates a post-earthquake hospital rescue scenario that explores how digital twins, multi-agent coordination, and quantum-enhanced optimization can support real-time decision-making. A Neo4j-based knowledge graph models agents, patients, environmental hazards, and tasks—providing the foundation for running simulations and applying quantum algorithms for task assignment and routing.
-
+This project simulates a post-earthquake hospital rescue scenario that explores how digital twins, multi-agent coordination, and quantum-enhanced optimization can support real-time decision-making. A Neo4j-based knowledge graph models agents, patients, environmental hazards, and tasks—providing the foundation for running simulations and applying quantum algorithms for task assignment and routing. As a part of this assignment, I also trained AI models, and I learned about how to code some classic problems.
 ---
 
 ## ✅ Task Progress
