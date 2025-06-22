@@ -1,6 +1,8 @@
 ### A Factor Graph Model of Trust for a Collaborative Multi-Agent System  
+
 **Authors:** Behzad Akbari, Mingfeng Yuan, Hao Wang, Haibin Zhu, Jinjun Shan  
-**Publication Year:** 2023  
+
+**Publication Year:** 2024
 
 **Summary:**  
 This paper introduces a factor graph-based model to evaluate and establish trust among agents in a multi-agent system (MAS), focusing on both independent and interdependent agent behaviors. The model uses Gaussian Process (GP) motion planning in conjunction with Bayesian inference to simulate realistic, trust-sensitive path planning behaviors among autonomous robots. It incorporates factors like obstacle avoidance, cooperation, transparency, and proximity safety to determine trustworthy behavior, all within a distributed framework. Unlike traditional centralized approaches, this method is fully decentralized and adapts in real time using local agent interactions and shared testimonies. Each agent’s behavior is modeled as a trajectory within a factor graph, where trust influences are encoded as probabilistic constraints. The simulation demonstrates this model in an unsignalized intersection scenario, where agents (e.g., autonomous cars) must navigate collaboratively based on mutual trust.
